@@ -89,5 +89,11 @@
  ],
  "seed": 20261118,
  "src": "/home/ubuntu/GitHub/work/algo/baseline_src",
+ "upstream_tests": {
+  "baseline_result": "273 passed, 16 xfailed",
+  "command": "python -m pytest tests -q",
+  "result": "273 passed, 16 xfailed in 2.79s",
+  "tree": "patched src/ vs unmodified baseline_src/"
+ },
  "warmup": 3
 }

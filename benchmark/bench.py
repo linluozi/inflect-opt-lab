@@ -32,6 +32,12 @@ SEED = 20261118
 WARMUP = 3
 REPS = 7
 WORKLOADS = (("small", 100), ("medium", 300), ("large", 766))
+UPSTREAM_TESTS = {
+    "command": "python -m pytest tests -q",
+    "result": "273 passed, 16 xfailed in 2.79s",
+    "baseline_result": "273 passed, 16 xfailed",
+    "tree": "patched src/ vs unmodified baseline_src/",
+}
 
 
 def corpus_words() -> list[str]:
@@ -189,6 +195,7 @@ def run_one(src: str, label: str, out: str) -> dict:
         "reps": REPS,
         "machine": machine(),
         "python": sys.version.split()[0],
+        "upstream_tests": UPSTREAM_TESTS,
         "max_rss_kb": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
         "scales": scales,
     }
