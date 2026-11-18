@@ -1,0 +1,11 @@
+{
+ "impl": "baseline",
+ "n_words": 300,
+ "python": "3.12.3",
+ "rep": 0,
+ "rss_kb": 40356,
+ "seconds": 0.030096163973212242,
+ "seed": 20261118,
+ "us_per_word": 100.32054657737415,
+ "workload": "medium"
+}

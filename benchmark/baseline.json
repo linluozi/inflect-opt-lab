@@ -1,0 +1,93 @@
+{
+ "impl": "baseline",
+ "machine": {
+  "cpu": "AMD EPYC 7K62 48-Core Processor",
+  "mem_total_kb": 3812564,
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3"
+ },
+ "max_rss_kb": 40356,
+ "python": "3.12.3",
+ "reps": 7,
+ "scales": [
+  {
+   "median_ms": 9.147880598902702,
+   "n_words": 100,
+   "p25_ms": 9.079955518245697,
+   "p75_ms": 9.454849641770124,
+   "raw": [
+    "benchmark/raw/baseline-small-0.json",
+    "benchmark/raw/baseline-small-1.json",
+    "benchmark/raw/baseline-small-2.json",
+    "benchmark/raw/baseline-small-3.json",
+    "benchmark/raw/baseline-small-4.json",
+    "benchmark/raw/baseline-small-5.json",
+    "benchmark/raw/baseline-small-6.json"
+   ],
+   "rel_stdev": 0.02194115158424569,
+   "reps": 7,
+   "warmup": 3,
+   "workload": "small"
+  },
+  {
+   "median_ms": 29.569530859589577,
+   "n_words": 300,
+   "p25_ms": 29.194310307502747,
+   "p75_ms": 29.86431075260043,
+   "raw": [
+    "benchmark/raw/baseline-medium-0.json",
+    "benchmark/raw/baseline-medium-1.json",
+    "benchmark/raw/baseline-medium-2.json",
+    "benchmark/raw/baseline-medium-3.json",
+    "benchmark/raw/baseline-medium-4.json",
+    "benchmark/raw/baseline-medium-5.json",
+    "benchmark/raw/baseline-medium-6.json"
+   ],
+   "rel_stdev": 0.02846433377090302,
+   "reps": 7,
+   "warmup": 3,
+   "workload": "medium"
+  },
+  {
+   "median_ms": 74.8968506231904,
+   "n_words": 766,
+   "p25_ms": 74.46206593886018,
+   "p75_ms": 77.11809035390615,
+   "raw": [
+    "benchmark/raw/baseline-large-0.json",
+    "benchmark/raw/baseline-large-1.json",
+    "benchmark/raw/baseline-large-2.json",
+    "benchmark/raw/baseline-large-3.json",
+    "benchmark/raw/baseline-large-4.json",
+    "benchmark/raw/baseline-large-5.json",
+    "benchmark/raw/baseline-large-6.json"
+   ],
+   "rel_stdev": 0.021109828084889443,
+   "reps": 7,
+   "warmup": 3,
+   "workload": "large"
+  },
+  {
+   "median_ms": 134.82283428311348,
+   "n_words": 766,
+   "p25_ms": 133.84612603113055,
+   "p75_ms": 137.7380141057074,
+   "raw": [
+    "benchmark/raw/baseline-real_mixed-0.json",
+    "benchmark/raw/baseline-real_mixed-1.json",
+    "benchmark/raw/baseline-real_mixed-2.json",
+    "benchmark/raw/baseline-real_mixed-3.json",
+    "benchmark/raw/baseline-real_mixed-4.json",
+    "benchmark/raw/baseline-real_mixed-5.json",
+    "benchmark/raw/baseline-real_mixed-6.json"
+   ],
+   "rel_stdev": 0.027072206453733844,
+   "reps": 7,
+   "warmup": 3,
+   "workload": "real_mixed"
+  }
+ ],
+ "seed": 20261118,
+ "src": "/home/ubuntu/GitHub/work/algo/baseline_src",
+ "warmup": 3
+}
