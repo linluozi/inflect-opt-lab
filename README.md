@@ -78,7 +78,8 @@ upstream checkout. The exact command used was
 ```bash
 git clone --depth=1 https://github.com/jaraco/inflect /tmp/inflect-upstream
 cd /tmp/inflect-upstream && git checkout 2084a52769175d8159474779f7cfa71f08f2f911
-cp -r <this-repo>/src/inflect ./inflect
+cp <this-repo>/src/inflect/__init__.py ./inflect/__init__.py
+cp <this-repo>/src/inflect/_types.py ./inflect/_types.py
 pip install -e . && python -m pytest tests -q
 # 273 passed, 16 xfailed in 2.79s
 ```
