@@ -5,7 +5,7 @@ number-to-words. This repo removes the runtime type-check wrapper from one
 internal helper, `engine.ud_match`, which `plural()` calls **three times per
 word**: every call re-ran typeguard's generic `Sequence[str | None]` /
 `Annotated` machinery for **18.1 µs**, while the matching work itself is
-0.2 µs. The check is inlined as an `isinstance` loop over the same `inflect.Word`
+0.24 µs (empty user wordlist, which is the case for the fixture corpus). The check is inlined as an `isinstance` loop over the same `inflect.Word`
 domain, so the accepted/rejected argument domain and the `TypeCheckError` class
 are unchanged; only typeguard's per-call resolution is gone.
 
